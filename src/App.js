@@ -3,12 +3,12 @@ import React from 'react';
 export default class App extends React.Component {
   constructor() {
     super();
-    this.state = { count: 0 };
+    this.state = { count: 2 };
   }
 
   increment() {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count ** 2
     });
   }
 
